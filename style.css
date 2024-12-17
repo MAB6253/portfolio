@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    font-family: 'Poppins';
+}
+
+h1{
+    font-weight: 800;
+}
+
+h3{
+    text-align: justify;
+}
+h4{
+    font-weight: 300;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+/* header */
+.navbar{
+    font-size: 16px;
+    height: 8vh;
+    color: whitesmoke;
+    font-family: "Open Sans Condensed", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    background-color: rgb(16, 151, 84);
+}
+
+.navbar a:hover{
+    border-radius: 10px;
+    padding: 1rem 3rem;
+}
+
+.navbar-toggler{
+    background-color: whitesmoke;
+}
+
+.navbar-nav{
+	background:rgb(16, 151, 84);
+}
+
+/* header */
+
+/* product */
+#card:hover{
+    transform: translateY(-10px);
+}
+
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgb(16, 151, 84);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+  
+#btn2 button:hover{
+    background-color: black;
+}
+
+/* product */
+
+/* lookbook */
+.gallery{
+    padding: 2rem 7%;
+}
+.gallery h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem 0;
+}
+.main-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+.inner-gallery{
+    flex: 100px;
+}
+.inner-gallery img{
+    width: 100%;
+}
+/* lookbook */
+
+/* order */
+
+.order{
+    padding-top: 100;
+}
+/* order */
+
+/* unequalled */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+:root {
+	--angle: 4deg;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.mab {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(63, 175, 212);
+	overflow: hidden;
+}
+
+.word-container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	outline: 1px solid red;
+}
+
+.word {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Montserrat";
+	font-size: 8rem;
+	font-weight: 900;
+	color: var(--color, #fff);
+	display: flex;
+	pointer-events: none;
+	line-height: 5.8rem;
+
+	.char {
+		position: relative;
+		-webkit-text-stroke: 2px #000;
+		transform: translateY(-45%) rotate(var(--angle));
+		animation: up-and-down 2s ease infinite;
+		animation-delay: calc((var(--word-index) * -0.15s) + (var(--char-index) * 0.1s));
+		z-index: calc(-1 * var(--char-index));
+		margin-left: -1.6rem;
+	}
+}
+
+@keyframes up-and-down {
+	0%,
+	100% {
+		transform: translateY(-45%) rotate(var(--angle));
+	}
+	50% {
+		transform: translateY(45%) rotate(var(--angle));
+	}
+}
+/* unequalled */
+
+/* footer */
+.footer{
+    display: flex;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img:hover{
+    border: 10px;
+}
+/* footer */
+
